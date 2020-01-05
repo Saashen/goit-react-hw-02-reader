@@ -45,7 +45,7 @@ export default class Reader extends Component {
           nextBtnDisabled={publicationIndex + 2 > items.length}
         />
         <Progress index={publicationIndex} length={items.length} />
-        <Publication item={publication} />
+        <Publication item={publication} page={publicationIndex + 1} />
       </div>
     );
   }
